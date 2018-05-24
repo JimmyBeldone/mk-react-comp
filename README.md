@@ -1,4 +1,4 @@
-# React Component Create
+# Make React Components
 React CLI allowing you to create react components from the command line with lots of customizations.
 
 ## Installation

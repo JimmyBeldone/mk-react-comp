@@ -1,6 +1,6 @@
 {
     "name": "mk-react-comp",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "React CLI allowing you to create react components from the command line with lots of customizations.",
     "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
     "keywords": [
@@ -16,7 +16,7 @@
     },
     "scripts": {
         "lint": "eslint src",
-        "test": "babel-node src/index.js containers Test --styl -f -l -r",
+        "test": "babel-node src/index.js Test --styl -f -l -r",
         "run:help": "babel-node src/index.js -h",
         "build": "yarn clean && babel src --out-dir lib",
         "clean": "rimraf lib",
