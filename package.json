@@ -16,7 +16,7 @@
     },
     "scripts": {
         "lint": "eslint src",
-        "test": "babel-node src/index.js containers Test --styl -f -l -r",
+        "test": "babel-node src/index.js Test --styl -f -l -r",
         "run:help": "babel-node src/index.js -h",
         "build": "yarn clean && babel src --out-dir lib",
         "clean": "rimraf lib",
