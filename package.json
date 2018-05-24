@@ -1,0 +1,45 @@
+{
+    "name": "mk-react-comp",
+    "version": "1.0.4",
+    "description": "React CLI allowing you to create react components from the command line with lots of customizations.",
+    "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
+    "keywords": [
+        "react",
+        "cli",
+        "component",
+        "generator"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JimmyBeldone/mk-react-comp"
+    },
+    "scripts": {
+        "lint": "eslint src",
+        "test": "babel-node src/index.js containers Test --styl -f -l -r",
+        "run:help": "babel-node src/index.js -h",
+        "build": "yarn clean && babel src --out-dir lib",
+        "clean": "rimraf lib",
+        "clean:test": "rimraf src/views"
+    },
+    "preferGlobal": true,
+    "bin": {
+        "mkreact": "lib/index.js"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.6.5",
+        "babel-core": "^6.5.2",
+        "babel-eslint": "^8.2.3",
+        "babel-plugin-array-includes": "^2.0.3",
+        "babel-preset-env": "^1.7.0",
+        "chalk": "^2.4.1",
+        "commander": "^2.15.1",
+        "eslint": "^4.19.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.12.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.7.0",
+        "eslint-plugin-standard": "^3.1.0",
+        "rimraf": "^2.5.2"
+    }
+}
