@@ -18,4 +18,4 @@ export const withFull = program.full
 
 export const withPkg = program.pkg
 
-export const configFile = 'mfkreactconfig.js'
+export const configFile = 'mkreactconfig.js'
