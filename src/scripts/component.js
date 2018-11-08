@@ -1,11 +1,11 @@
 import path from 'path'
-import {withJSX, withFolder, withFull, withPkg, isStateless, isCss, isStylus, isLess, isScss, configFile, withLifecycle} from '../constants/env_vars'
-import {styleExts, createFile} from '../constants'
+import { withJSX, withFolder, withFull, withPkg, isStateless, isCss, isStylus, isLess, isScss, configFile, withLifecycle } from '../constants/env_vars'
+import { styleExts, createFile } from '../constants'
 
-import {log, green, yellow, red, magenta, blue} from '../utils/colors'
-import {createDirectory, createFiles, writeToFile, createPjson, createFullComponent, addCssExtension} from '../utils/file'
-import {primaryErrors, extraArgsErrors} from '../utils/errorsManagment'
-import {checkConfigFile, getCmdOptionPath, cmdOptionPathExists} from '../utils/configManagment'
+import { log, green, yellow, red, magenta, blue } from '../utils/colors'
+import { createDirectory, createFiles, writeToFile, createPjson, createFullComponent, addCssExtension } from '../utils/file'
+import { primaryErrors, extraArgsErrors } from '../utils/errorsManagment'
+import { checkConfigFile, getCmdOptionPath, cmdOptionPathExists } from '../utils/configManagment'
 
 import compTpl from '../templates/component'
 import stlCompTpl from '../templates/stlComponent'

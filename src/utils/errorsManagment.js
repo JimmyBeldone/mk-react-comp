@@ -1,5 +1,5 @@
 
-import {log, green, yellow, red, magenta, blue} from '../utils/colors'
+import { log, green, yellow, red, magenta, blue } from '../utils/colors'
 const program = require('commander')
 
 export const primaryErrors = () => {

@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 import pjson from '../package.json'
-import {log} from './utils/colors'
+import { log } from './utils/colors'
 const program = require('commander')
 
 program
