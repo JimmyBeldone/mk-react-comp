@@ -5,11 +5,11 @@ export const PropTypes = `import PropTypes from 'prop-types'`
 
 export const Redux = `import { connect } from 'react-redux'`
 export const mapStateToProps = `
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
 
 })`
 export const mapDispatchToProps = `
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
 
 })
 `

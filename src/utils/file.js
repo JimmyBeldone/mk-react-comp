@@ -1,9 +1,9 @@
 import fs from 'fs'
-import {exec, execSync} from 'child_process'
+import { exec, execSync } from 'child_process'
 import path from 'path'
-import {log, green, yellow, red, blue} from './colors'
-import {configFile} from '../constants/env_vars'
-import {mkdir} from '../constants'
+import { log, green, yellow, red, blue } from './colors'
+import { configFile } from '../constants/env_vars'
+import { mkdir } from '../constants'
 
 export const createDirectory = (component) => {
     try {

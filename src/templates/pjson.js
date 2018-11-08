@@ -1,4 +1,4 @@
-import {withJSX} from '../constants/env_vars'
+import { withJSX } from '../constants/env_vars'
 
 const args = process.argv.slice(2)
 const component = args[1]

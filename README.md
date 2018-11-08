@@ -115,7 +115,3 @@ will generate 3 files
    ├─ Header.styl        -> Stylus stylesheet
    └─ package.json       -> With name, main and version number markup included
 ```
-
-#To Do :
-
-- [ ]  Allow Reducer generation

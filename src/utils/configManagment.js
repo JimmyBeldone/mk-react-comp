@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import {configFile} from '../constants/env_vars'
-import {log, green, yellow, red, magenta, blue} from '../utils/colors'
-import {createDirectory} from './file'
+import { configFile } from '../constants/env_vars'
+import { log, green, yellow, red, magenta, blue } from '../utils/colors'
+import { createDirectory } from './file'
 
 // Check if config file exists
 export const checkConfigFile = () => {
