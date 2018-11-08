@@ -2,7 +2,7 @@
 .eslintrc
 .travis.yml
 mkreactconfig.js
-test/
+Test/
 src
 *.log
 node_modules
