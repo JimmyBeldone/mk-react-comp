@@ -1,4 +1,7 @@
 # Make React Components
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/JimmyBeldone/mk-react-comp.svg)](https://greenkeeper.io/)
+
 React CLI allowing you to create react components from the command line with lots of customizations.
 
 ## Installation
