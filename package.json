@@ -1,78 +1,82 @@
 {
-    "name": "mk-react-comp",
-    "version": "1.1.5",
-    "description": "React CLI allowing you to create react components from the command line with lots of customizations.",
-    "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
-    "bugs": {
-        "url": "https://github.com/JimmyBeldone/mk-react-comp/issues"
-    },
-    "private": false,
-    "keywords": [
-        "react",
-        "cli",
-        "component",
-        "generator"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/JimmyBeldone/mk-react-comp",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/JimmyBeldone/mk-react-comp.git"
-    },
-    "scripts": {
-        "lint": "eslint src --fix",
-        "pretty": "prettier --write 'src/**/*.js'",
-        "test": "echo 'No test specified'",
-        "test:generate": "babel-node src/index.js Test --styl -f -l -r",
-        "run:help": "babel-node src/index.js -h",
-        "build": "babel src --out-dir lib",
-        "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
-        "clean": "rimraf lib",
-        "clean:test": "rimraf src/views"
-    },
-    "preferGlobal": true,
-    "bin": {
-        "mkreact": "lib/index.js"
-    },
-    "devDependencies": {
-        "@babel/cli": "7.4.4",
-        "@babel/core": "7.4.4",
-        "@babel/node": "7.2.2",
-        "@babel/preset-env": "7.4.4",
-        "babel-eslint": "10.0.1",
-        "babel-plugin-array-includes": "2.0.3",
-        "chalk": "2.4.2",
-        "commander": "2.20.0",
-        "commitizen": "^3.1.1",
-        "cross-env": "^5.2.0",
-        "cz-conventional-changelog": "2.1.0",
-        "eslint": "5.16.0",
-        "eslint-config-airbnb-base": "13.1.0",
-        "eslint-config-prettier": "4.3.0",
-        "eslint-plugin-import": "2.17.2",
-        "eslint-plugin-node": "9.0.1",
-        "eslint-plugin-prettier": "^3.1.0",
-        "eslint-plugin-promise": "4.1.1",
-        "husky": "^2.3.0",
-        "lint-staged": "^8.1.7",
-        "prettier": "1.17.1",
-        "rimraf": "2.6.3"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "{src}/**/*.js": [
-            "eslint --fix",
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
+  "name": "mk-react-comp",
+  "version": "0.0.0-development",
+  "description": "React CLI allowing you to create react components from the command line with lots of customizations.",
+  "author": "Jimmy Beldone <dev.jimmy.beldone@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/JimmyBeldone/mk-react-comp/issues"
+  },
+  "private": false,
+  "keywords": [
+    "react",
+    "cli",
+    "component",
+    "generator"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JimmyBeldone/mk-react-comp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JimmyBeldone/mk-react-comp.git"
+  },
+  "scripts": {
+    "lint": "eslint src --fix",
+    "pretty": "prettier --write 'src/**/*.js'",
+    "test": "echo 'No test specified'",
+    "test:generate": "babel-node src/index.js Test --styl -f -l -r",
+    "run:help": "babel-node src/index.js -h",
+    "build": "babel src --out-dir lib",
+    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
+    "clean": "rimraf lib",
+    "clean:test": "rimraf src/views",
+    "semantic-release": "semantic-release"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "mkreact": "lib/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/node": "7.2.2",
+    "@babel/preset-env": "7.4.4",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "babel-eslint": "10.0.1",
+    "babel-plugin-array-includes": "2.0.3",
+    "chalk": "2.4.2",
+    "commander": "2.20.0",
+    "commitizen": "^3.1.1",
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "9.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "4.1.1",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "1.17.1",
+    "rimraf": "2.6.3",
+    "semantic-release": "^15.13.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "{src}/**/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
