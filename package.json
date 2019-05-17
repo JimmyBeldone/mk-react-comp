@@ -14,6 +14,7 @@
         "generator"
     ],
     "license": "MIT",
+    "homepage": "https://github.com/JimmyBeldone/mk-react-comp",
     "repository": {
         "type": "git",
         "url": "https://github.com/JimmyBeldone/mk-react-comp.git"
@@ -21,9 +22,11 @@
     "scripts": {
         "lint": "eslint src --fix",
         "pretty": "prettier --write 'src/**/*.js'",
-        "test": "babel-node src/index.js Test --styl -f -l -r",
+        "test": "echo 'No test specified'",
+        "test:generate": "babel-node src/index.js Test --styl -f -l -r",
         "run:help": "babel-node src/index.js -h",
-        "build": "yarn clean && babel src --out-dir lib",
+        "build": "babel src --out-dir lib",
+        "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
         "clean": "rimraf lib",
         "clean:test": "rimraf src/views"
     },
@@ -40,6 +43,7 @@
         "babel-plugin-array-includes": "2.0.3",
         "chalk": "2.4.2",
         "commander": "2.20.0",
+        "cross-env": "^5.2.0",
         "eslint": "5.16.0",
         "eslint-config-airbnb-base": "13.1.0",
         "eslint-config-prettier": "4.3.0",
@@ -47,7 +51,21 @@
         "eslint-plugin-node": "9.0.1",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-promise": "4.1.1",
+        "husky": "^2.3.0",
+        "lint-staged": "^8.1.7",
         "prettier": "1.17.1",
         "rimraf": "2.6.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "{src}/**/*.js": [
+            "eslint --fix",
+            "prettier --write",
+            "git add"
+        ]
     }
 }
