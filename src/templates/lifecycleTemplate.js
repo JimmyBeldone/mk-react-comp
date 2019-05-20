@@ -1,4 +1,4 @@
-export default () => (`
+export default () => `
     constructor(props) {
         super(props)
         this.state = {}
@@ -21,4 +21,4 @@ export default () => (`
     componentWillUnmount() {
 
     }
-`)
+`;

@@ -20,6 +20,7 @@
     "url": "https://github.com/JimmyBeldone/mk-react-comp.git"
   },
   "scripts": {
+    "commit": "git-cz",
     "lint": "eslint src --fix",
     "pretty": "prettier --write 'src/**/*.js'",
     "test": "echo 'No test specified'",

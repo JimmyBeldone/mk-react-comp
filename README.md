@@ -1,13 +1,19 @@
 # Make React Components
+
 React CLI allowing you to create react components from the command line with lots of customizations.
 
 ## Installation
+
 ### Via Yarn (or NPM)
+
 Make sure to install this module globally so you can run the command from anywhere.
+
 ```bash
 yarn global add mk-react-comp
 ```
+
 or
+
 ```bash
 npm install -g mk-react-comp
 ```
@@ -61,10 +67,13 @@ module.exports = [ {
 ```
 
 This way, you can now use *containers* as action :
+
 ```bash
-$ mkreact containers Header,Footer -d --styl
+mkreact containers Header,Footer -d --styl
 ```
+
 will generate
+
 ```
 root
  └-- src
@@ -80,11 +89,15 @@ root
 ```
 
 ## Examples
-#### Create `Home` component file that mounts to the DOM
+
+### Create `Home` component file that mounts to the DOM
+
 ```bash
-$ mkreact Home --entry
+mkreact Home --entry
 ```
+
 will generate this `Home.js` file
+
 ```js
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
@@ -103,10 +116,12 @@ export default class Home extends PureComponent {
 ReactDOM.render(<Home/>, document.getElementById('app'))
 ```
 
-#### Create `Header` component folder with appropriate component files and a package.json
+### Create `Header` component folder with appropriate component files and a package.json
+
 ```bash
-$ mkreact components Header -d --jsx -pkg --styl
+mkreact components Header -d --jsx -pkg --styl
 ```
+
 will generate 3 files
 
 ```

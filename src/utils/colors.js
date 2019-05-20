@@ -1,9 +1,9 @@
-import chalk from 'chalk'
+import chalk from 'chalk';
 
-export const log = console.log
+export const { log } = console;
 
-export const green = chalk.green
-export const yellow = chalk.yellow
-export const red = chalk.red
-export const magenta = chalk.magenta.bold
-export const blue = chalk.cyan
+export const { green } = chalk;
+export const { yellow } = chalk;
+export const { red } = chalk;
+export const magenta = chalk.magenta.bold;
+export const blue = chalk.cyan;

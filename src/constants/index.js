@@ -1,27 +1,26 @@
-let createFile
-let mkdir
+let cf;
+let dir;
 
 // Detecting if platform is Windows, OSX, or Linux
 // for creating files
 switch (process.platform) {
     case 'darwin':
     case 'linux':
-        createFile = 'touch '
-        mkdir = 'mkdir -p '
-        break
+        cf = 'touch ';
+        dir = 'mkdir -p ';
+        break;
     case 'win32':
-        createFile = 'echo.> '
-        mkdir = 'mkdir '
-        break
+        cf = 'echo.> ';
+        dir = 'mkdir ';
+        break;
     default:
-        throw new Error('Unsupported platform: ' + process.platform)
+        throw new Error(`Unsupported platform: ${process.platform}`);
 }
 
 // stylesheet extensions
-const styleExts = ['--scss', '--css', '--styl', '--less']
+const styleExts = ['--scss', '--css', '--styl', '--less'];
 
-export {
-    createFile,
-    styleExts,
-    mkdir
-}
+const createFile = cf;
+const mkdir = dir;
+
+export { createFile, styleExts, mkdir };
