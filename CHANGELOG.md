@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.10...v1.1.11) (2020-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v4.1.0 ([9af04fc](https://github.com/JimmyBeldone/mk-react-comp/commit/9af04fc5c6e31e2d8a1d3c8df6859c9bc64462b3))
+
 ## [1.1.10](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.9...v1.1.10) (2020-04-28)
 
 
