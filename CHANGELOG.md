@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.12...v1.1.13) (2020-07-31)
+
+
+### Bug Fixes
+
+* update dependencies ([924414d](https://github.com/JimmyBeldone/mk-react-comp/commit/924414d500265d7863fd4cdcf7fb0622e873cde3))
+
 ## [1.1.12](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.11...v1.1.12) (2020-07-20)
 
 
