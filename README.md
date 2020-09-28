@@ -2,8 +2,11 @@
 <h3 align="center">React CLI allowing you to create react components from the command line with lots of customizations. <a href="https://github.com/webpack-contrib/webpack-bundle-analyzer">webpack-bundle-analyser</a> to visualize size of output files with an interactive zoomable treemap.</h3>
 
 <p align="center">
-    <a href="https://travis-ci.com/JimmyBeldone/mk-react-comp">
-        <img alt="travis build" src="https://travis-ci.com/JimmyBeldone/mk-react-comp.svg?branch=master">
+    <a href="https://github.com/JimmyBeldone/mk-react-comp">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/mk-react-comp/workflows/TESTING/badge.svg">
+    </a>
+    <a href="https://github.com/JimmyBeldone/mk-react-comp">
+        <img alt="travis build" src="https://github.com/JimmyBeldone/mk-react-comp/workflows/PUBLISH/badge.svg">
     </a>
     <a href="https://www.npmjs.com/package/mk-react-comp">
         <img alt="npm version" src="https://badgen.net/npm/v/mk-react-comp">
