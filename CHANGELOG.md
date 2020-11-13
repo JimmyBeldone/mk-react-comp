@@ -1,3 +1,11 @@
+## [1.1.17](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.16...v1.1.17) (2020-11-13)
+
+
+### Bug Fixes
+
+* update commander@6.2.0 ([b71691b](https://github.com/JimmyBeldone/mk-react-comp/commit/b71691b6ccfea2e332df142f349cb89c45891c2f))
+* update dev dependencies ([293e569](https://github.com/JimmyBeldone/mk-react-comp/commit/293e56907dd08fca987e7d1b7db0cea91de6f8cf))
+
 ## [1.1.16](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.15...v1.1.16) (2020-09-28)
 
 
