@@ -1,3 +1,10 @@
+## [1.1.21](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.20...v1.1.21) (2021-03-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commander to v6.2.1 ([56780ba](https://github.com/JimmyBeldone/mk-react-comp/commit/56780bab85ca08d1bf74c91872cceac6943d374f))
+
 ## [1.1.20](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.19...v1.1.20) (2021-01-24)
 
 
