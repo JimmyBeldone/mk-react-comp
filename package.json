@@ -27,7 +27,7 @@
     "test:generate": "node lib/index.js Test --styl -f -l -r",
     "run:help": "babel-node src/index.js -h",
     "build": "babel src --out-dir lib",
-    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
+    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build && husky install",
     "clean": "rimraf lib",
     "clean:test": "rimraf src/views",
     "semantic-release": "semantic-release",
@@ -57,17 +57,11 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-promise": "5.1.1",
-    "husky": "4.3.8",
-    "lint-staged": "10.5.4",
+    "husky": "^7.0.0",
+    "lint-staged": "11.2.6",
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "semantic-release": "18.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "npx --no-install devmoji -e --lint"
-    }
   },
   "lint-staged": {
     "{src}/**/*.js": [
