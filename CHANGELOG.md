@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.24...v1.1.25) (2022-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v5 ([2122e8f](https://github.com/JimmyBeldone/mk-react-comp/commit/2122e8f8b91c04fd6582c51adcda3e936b039447))
+
 ## [1.1.24](https://github.com/JimmyBeldone/mk-react-comp/compare/v1.1.23...v1.1.24) (2022-03-19)
 
 
