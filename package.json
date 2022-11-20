@@ -76,6 +76,6 @@
   },
   "dependencies": {
     "chalk": "5.0.1",
-    "commander": "6.2.1"
+    "commander": "9.4.1"
   }
 }
