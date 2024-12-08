@@ -44,7 +44,7 @@
     "@babel/preset-env": "7.16.11",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "babel-plugin-array-includes": "2.0.3",
     "commitizen": "4.2.4",
     "cross-env": "7.0.3",
